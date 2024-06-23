@@ -1,6 +1,6 @@
 {
   "name": "sqs-utils-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "sqs common utility library test",
   "main": "dist/index.js",
   "scripts": {
@@ -9,9 +9,10 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    "./number": "./src/utils/util.number.js",
-    "./date": "./src/utils/util.date.js",
-    "./format": "./src/utils/formatUtil.js"
+    ".": "./dist/index.js",
+    "./number": "./dist/utils/util.number.js",
+    "./date": "./dist/utils/util.date.js",
+    "./format": "./dist/utils/formatUtil.js"
   },
   "files": [
     "dist"
