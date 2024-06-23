@@ -1,17 +1,27 @@
 {
   "name": "sqs-utils-toolkit",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "sqs common utility library test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build"
   },
+  "exports": {
+    "./number": "./src/utils/util.number.js",
+    "./date": "./src/utils/util.date.js",
+    "./format": "./src/utils/formatUtil.js"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "22sook00",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "date-fns": "^2.30.0",
@@ -20,6 +30,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.0",
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7"
